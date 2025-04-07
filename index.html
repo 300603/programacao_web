@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Programação Web</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
             <li><b>Elementos utilizados pelo Cliente / usado pelo Servidor</b></li>
             <u>Cliente:</u>
             <ul>
-                <li>HTML (do Inglês: Hyper Text Markup Language. No Portugiês: Linguagem de Marcação de Hipertexto): é uma linguagem de marcação que serve para criar a estrutura e o conteúdo de páginas web.</li>
+                <li>HTML (do Inglês: Hyper Text Markup Language. No Português: Linguagem de Marcação de Hipertexto): é uma linguagem de marcação que serve para criar a estrutura e o conteúdo de páginas web.</li>
                 <li>CSS (Folha de Estilo em Cascatas): é um código em que você pode fazer alterações rápidas de layout, como definição de cores e fontes.</li>
                 <li>JavaScript: é uma linguagem de programação que permite a criação de páginas web interativas, adicionando comportamento dinâmico a sites.</li>
                 <li>XML (Extensible Markup Language): permite definir e armazenar dados de maneira compartilhável.</li>
@@ -237,6 +239,664 @@
                         </ul>
                     </ul>
                 </ul>
+                <li><b>Estilos de Borda de um Elemento</b></li>
+                <ul>
+                    <li>A propriedade border é responsável por adicionar contorno ao redor de seu conteúdo e pode ter diferentes estilos e tamanhos, podendo ser utilizada em diferentes elementos HTML, como, por exemplo, o &lt; input &gt;. As especificações do CSS permitem definir espessura, cor e estilo para a borda, além de  ser possível especificar cada uma das quatro bordas individualmente.</li>
+                    <li>A sintaxe resumida dessa propriedade é apresentada na Figura 3, a seguir.</li>
+                    <img src="imagem/exemplo_estilo_de_bordas_de_um_elemento.png">
+                    <li>A declaração da borda pode ser feita resumidamente, como visto na Figura 5, porém, também é possível fazer a declaração individualmente de cada propriedade.</li>
+                    <li>Os exemplos a seguir produzem o mesmo efeito:</li>
+                    <img src="imagem/codigo_estilo_de_bordas_de_um_elemento_1.png">
+                    <li>Ou</li>
+                    <img src="imagem/codigo_estilo_de_bordas_de_um_elemento_2.png">
+                </ul>
+                <li><b>Margens e Espaçamentos</b></li>
+                <ul>
+                    <li>A propriedade margin permite adicionar ao redor do elemento um distanciamento na parte externa. A margem não tem cor de fundo e é completamente transparente. As margens superior, inferior, direita e esquerda podem ser alteradas de forma independente, usando suas propriedades separadas:</li>
+                    <ul>
+                        <li><b>Margin-top:</b> determina o espaçamento superior;</li>
+                        <li><b>Margin-right:</b> determina o espaçamento no lado direito;</li>
+                        <li><b>Margin-bottom:</b> determina o espaçamento inferior;</li>
+                        <li><b>Margin-left:</b> determina o espaçamento no lado esquerdo.</li>
+                    </ul>
+                    <li>Para centralizar um elemento na tela ou dentro de outro elemento, podemos utilizar o valor auto, como mostra o exemplo a seguir:</li>
+                    <img src="imagem/codigo_margens_e_espaçamentos.png">
+                    <li>Observe, no exemplo, que, como queremos centralizar o parágrafo, a propriedade margin: auto foi aplicada somente a esse elemento. Poderíamos aplicar a mesma formatação ao box para centralizá-lo, como foi feito anteriormente.</li>
+                    <li>Veja a seguir como ficaria essa formatação:</li>
+                    <img src="imagem/codigo_box_margens_e_espaçamentos.png">
+                    <li>Outra propriedade utilizada para definir o espaçamento ao redor de um elemento é o padding, que define o espaço interno entre um elemento e sua respectiva borda. Assim como na propriedade margin, também é possível determinar os espaçamentos superior, interior, direito e esquerdo de forma independente, usando suas propriedades separadas.</li>   
+                    <li>Vamos alterar o exemplo anterior, para aplicar um padding de 20px ao parágrafo:</li>
+                    <img src="imagem/codigo_box_margens_e_espaçamentos_2.png">
+                    <li>A Figura 4 mostra a comparção entre a formatação do parágrafo antes e depois da aplicação do padding de 20px ao aprágrafo.</li>
+                    <img src="imagem/exemplo_formatação_do_parágrafo_antes_e_depois_da_aplicação_do_padding_de_20px.png">
+                    <li>Na Figura 5, temos a renderização de um elemento HTML, que exibe um determinado conteúdo, de acordo com a formatação CSS. Perceba a diferença entre margin e padding, bem como a função do width e do height, que determinam a largura e a altura do elemento, respectivamente.</li>
+                    <img src="imagem/exemplo_apresentação_visual_de_um_elemento_de_acordo_com_a_formatação_CSS.png">    
+                </ul>
+            </ul>
+            <li><b>Módulos CSS3</b></li>
+            <ul>
+                <li>A versão mais recente das folhas de estilo é o CSS3 que, diferentemente de suas versões anteriores, foi desenvolvido em módulos que introduziram novos recursos que mudaram amplamente a forma como as páginas web são vistas pelos usuários.</li>
+                <li>Vejamos, a seguir, algunas dos principais módulos e como utilizá-los.</li>
+                <li><b>Bordas e Sombras com CSS3</b></li>
+                <ul>
+                    <li>A partir do CSS3, podemos criar bordas arredondas, adicionar sombras nas caixas e usar imagens como borda, sem a necessidade de um programa de editoração.</li>
+                    <li>O Quadro 2 apresenta as principais propriedades das bordas e suas contabilidades com os navegadores:</li>
+                    <img src="imagem/principais_propriedades_e_compatibilidade_com_navegadores.png">
+                    <li>A propriedade border-radius define um raio de curvatura nos quatro contos de um box e permite adicionar o efeito de arredondamento ao elemento, independentemente do box ter ou não uma borda declarada.</li>
+                    <li>Veja a Figura 6, a seguir:</li>
+                    <img src="imagem/comparação_entre_o_arredondamento_com_e_sem_a_borda_declarada.png">
+                    <li>A seguir, temos o código utilizado para o box com borda declarada:</li>
+                    <img src="imagem/codigo_utilizado_para_o_box_com_borda_declarada.png">
+                    <li>A propriedade box-shadow define uma ou mais sombras para um elemento:</li>
+                    <img src="imagem/codigo_box_shadow_define_uma_ou_mais_sombras_para_um_elemento.png">
+                </ul>
+                <li><b>Outras Formatações com CSS3</b></li>
+                <ul>
+                    <li>A partir do CSS3, a estilização de textos passou a contar com novas propriedades, entre as quais vamos destacar, nos exemplos a seguir, o text-shadow e word-wrap:</li>
+                    <img src="imagem/codigo_text_shadow_e_word_wrap.png">
+                    <li>Como vimos anteriormente, a família da fonte de um texto é definida com a propriedade font-family. Entretanto, você pode querer utilizar uma fonte que não está instalada no computador do usuário. Isso é possível por meio da regra @font-face, que permite incluir uma fonte a partir da Web.</li>
+                    <li>Veja o exemplo a seguir, no qual importamos a fonte "Shantell Sans", a partir da biblioteca do Google, e utilizamos na formação do parágrafo:</li>
+                    <img src="imagem/codigo_shantell_sans.png">
+                    <li>Com a propriedade CSS tranforms é possível esticar, girar, aumentar e torcer um elemento HTML.</li>
+                    <li>Os principais métodos que veremos são:</li>
+                    <ul>
+                        <li><b>Rotate(x):</b> gira um elemento no sentido horário ou anti-horário, de acordo com um determinado ângulo (x);</li>
+                        <li><b>Translate(x, y):</b> permite mover um elemento de uma posição para a outra, dependendo do parâmetros de posição passados dos eixos x e y;</li>
+                        <li><b>Scale(x):</b> permite aumentar ou diminuir o tamanho de um elemento.</li>
+                    </ul>
+                    <li>A seguir, temos um exemplo completo utilizando a propriedade transform.</li>
+                    <img src="imagem/exemplo_codigo_propriedade_transform.png">
+                    <li>Se você digitou o código acima, pôde perceber que seu navegador exibe uma imagem (logo do CSS) e, quando passamos o ponteiro do mouse sobre ela, a imagem gira e aumenta de tamanho.</li>
+                    <li>Você entendeu o que código faz?</li>
+                    <li>Não!</li>
+                    <li>Sem problemas, pois, no Quadro 3, vamos analisar o que está acontecendo.</li>
+                    <img src="imagem/exemplo_comentado.png">
+                    <li>Para finalizar esta Unidade, devemos detalhar a propriedade transition, que permite definir a transição entre dois estados de um elemento HTML. Experimente de tamanho quando movemos o cursor do mouse sobre ela quase instantaneamente, sem o efeito de rotação!</li>
+                    <li>Observe, nesse último exemplo, o efeito de transição aplicado para alterar o comprimento de uma &lt; div &gt;:</li>
+                    <img src="imagem/codigo_comprimento_de_uma_div.png">
+                </ul>   
+            </ul>
+        </ul>
+    </p>
+    <h2>Unidade 3</h2>
+    <p>
+       <h3>Javascript</h3>
+       <ul>
+            <li><b>Introdução ao Javascript</b></li>
+            <ul>
+                <li>O JavaScript (ou simplemente JS) é uma Linguagem interpretada, de alto nível, para programação de uso geral, muito aplicada no desenvolvimento web. Conhecida como Linguagem da Internet, já que é nativa dos navegadores, o JS permite realizar validações do lado cliente e interações entre páginas, além de alterar dinamicamente estilos e elementos da página HTML.</li>
+                <li>Muito conhecido por sua capacidade de lidar com o processamento de lado do clente (front-end), o JS evoluiu para o lado do servidor (NodeJS) e, hoje, pode ser utilizado, inclusive, no desenvolvimento híbrido para dispositivos móveis, por meio do framework Apache Cordova.</li>
+                <li>O uso do JavaScript permite a criação de efeitos nas páginas Web, validação de formulários, identificação do contexto e definição de comportamentos em função desse contexto, entre outros. No lado do usuário, o navegador é oresponsável pela interpretação das instruções dos scripts, executando-as de modo a permitir essa interatividade.</li>
+                <li>Todo o Código JavaScript é executado somente quando o evento ao qual está associado é acionado e, por esse motivo, o JS usa o chamado "modelo de execulção controlado por eventos". Porém, em alguns cassos, podemos inserir o Código sem a associação a eventos e, dessa forma, a instrução ou o comando será executado conforme o navegador interpreta a página web.</li>
+                <li>As principais vantagens do JavaScript são:</li>
+                <ul>
+                    <li><b>Linguagem leve:</b> o interpretador é nativo dos navegadores, o que permite que o código seja executado na sua forma natural e rápida, possibilitando que alterações e erros sejam tratados em tempo de execução;</li>
+                    <li><b>Flexibilidade e versatilidade:</b> por ser uma Linguagem nativa dos navegadores, o processo de desenvolvimento web é simplificado. Mas não é somente disso que estamos falando! Hoje, já é possível executar o JavaScript no lado do servidor, além de sua aplicação para criar jogos, aplicativos desktop e até mobile;</li>
+                    <li><b>Comunidade consolidada:</b> por ser umas das Linguagens mais conhecidas do mundo, sua comunidade é também outro ponto forte, o que significa ajuda disponível em diversos canais de comunicação, farta disponibilidade e Bibliotecas e o frameworks, que contribuem muito para o crescimento da Linguagem.</li>
+                </ul>
+                <li><u>Iniciando com JavaScript</u></li>
+                <ul>
+                    <li>Podemos inserir um script JS no documento HTML das seguintes formas:</li>
+                    <ul>
+                        <li>Dentro de uma tag HTML;</li>
+                        <li><b>JavaScript in-line:</b> o script é inserido no corpo da página <b>&lt; body &gt; &lt; /body &gt;</b>;</li>
+                        <li><b>JavaScript interno:</b> fazemos a declaração na seção <b>&lt; head &gt; &lt; /head &gt;</b>;</li>
+                        <li><b>JavaScript Externo:</b> por meio de um arquivo que tem a extensão <b>.sj</b>.</li>
+                    </ul>
+                    <li>Veremos, a seguir, como utilizar cada um desses casos e alguns exemplos de aplicação.</li>
+                    <ul>
+                        <li><i>JavaScript em uma Tag</i></li>
+                        <ul>
+                            <li>Quando inserimos um código JavaScript em uma tag, ele é sempre associado a um evento. Os eventos serão vistos mais adiante. Por enquanto, faremos um exemplo simples com o evento onclick, que é acionado quando o usuário clica no elemento:</li>
+                            <img src="imagem/codigo_javascript_em_uma_tag.png">
+                        </ul>
+                        <li><i>JavaScript Dentro do body e do head</i></li>
+                        <ul>
+                            <li>Se fizermos uma comparação com CSS, esse modo de inserir JavaScript em uma página seria o modo incorporado. Seja dentro do body ou do head, sempre devemos utilizar a tag &lt; script &gt; ... &lt; \script &gt;, para demarcar o início e o fim do script JS. Note que os comandos podem ser executados sem a necessidade de eventos. Isso não é o mais comum, mas é um recurso que usaremos em nossos estudos.</li>
+                            <li>Veja o exemplo a seguir:</li>
+                            <img src="imagem/codigo_javascript_dentro_do_body_e_do_head.png">
+                        </ul>
+                        <li><i>JavaScript Externo</i></li>
+                        <ul>
+                            <li>Assim como em CSS, também podemos criar um arquivo separado do HTML com nossos códigos em JavaScript. Esse arquivo deve ser salvo com a extensão .js e é chamado no cabeçalho da página com a tag &lt; script &gt;.</li>
+                            <li>No próximo exemplo, vamos utilizar dois arquivos: exemplo3.html e script3.js:</li>
+                            <img src="imagem/codigo_javascript_externo_1.png">
+                            <img src="imagem/codigo_javascript_externo_2.png">
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <li><b>O que é um Evento?</b></li>
+            <ul>
+                <ul>
+                    <li>Sempre que ocorre uma interação com um documento ou página, um evento é disparado. Um evento pode ser qualquer interatividade do usuário com um elemento HTML e alguns eventos também podem ser disparados pelo navegador.</li>
+                    <li>Alguns exemplos de eventos HTML são:</li>
+                <ul>
+                    <li>Uma página da web HTML terminou de carregar;</li>
+                    <li>Um campo de entrada HTML foi alterado;</li>
+                    <li>Um botão HTML foi clicado.</li>
+                </ul>
+                <li>As reações aos eventos (programadas em JavaScript) são sempre registradas como propriedades dos elementos. O Quadro 1 apresenta uma lista de alguns eventos HTML mais comuns.</li>
+                <img src="imagem/quadro_alguns_eventos_html.png">
+                <li>O exemplo a seguir mostra as informações da data a partir do clique no botão:</li>
+                <img src="imagem/codigo_de_evento_html.png">
+            </ul>
+            <li><b>Manipulando Dados com JS</b></li>
+            <ul>
+                <li>Todos os dados que são manipulados por um Programa são armazenados na memória do computador e podem ser de dois tipos:</li>
+                <ul>
+                    <li><b>Constante:</b> quando o conteúdo não muda durante a execução do programa;</li>
+                    <li><b>Variável:</b> quando o conteúdo muda durante a execução do Programa.</li>
+                </ul>
+                <li>O JavaScript é uma Linguagem de tipagem dinâmica, pois, ao contrário de outras Linguagens que exigem a declaração de uma variável com um tipo de dado definido, em JS, as variáveis não estão associadas diretamente a um tipo específico:</li>
+                <img src="imagem/codigo_manipulando_dados_com_js.png">
+                <li>A definição de variáveis exige atenção em algumas regras:</li>
+                <ul>
+                    <li>Toda variável deve começar com uma letra ou um underscore("_");</li>
+                    <li>Caracteres subsequentes devem ser letras ou números;</li>
+                    <li>Não deve conter espaço em branco ou caracteres especiais;</li>
+                    <li>Não deve ser uma palavra reservada.</li>
+                </ul>
+                <li>Além disso, é importante destacar que o JavaScript é <b>case-sensitive</b>, e isso significa dizer que todas as variáveis listadas a seguir são diferentes:</li>
+                <ul>
+                    <li>quantidade;</li>
+                    <li>QUANTIDADE;</li>
+                    <li>Quantidade;</li>
+                    <li>QuAnTidAdE.</li>
+                </ul>
+                <li>Existem duas palavras-chave para criarmos variáveis: var (antigo) ou let (moderno). Até a especificação ECMAScript 2015 (ES6), a palavra-chave var era utilizada para declarar uma variável. Entretanto, era possível declararmos duas variáveis com o mesmo nome, o que, às vezes, poderia levar a um resultado imprevisível e incorreto.</li>
+                <img src="imagem/codigo_palavra_chave_var.png">
+                <li>Nesse exemplo, temos duas variáveis com o nome framework e a saída é Angular, que foi a última declaração da variável.</li>
+                <li>A partir da ES6, foi introduzida a palavra-chave let, em substituição a var:</li>
+                <img src="imagem/codigo_palavra_chave_let.png">
+                <li>A linha 2 lançará um erro, pois a variável framework já fora declarada anteriormente. A ES6 também introduziu a palavra-chave const, para dados que têm valor somente de leitura, ou seja, cujo valor não pode ser alterado.</li>
+                <img src="imagem/codigo_palavra_chave_const.png">
+                <li><u>Como Trabalhar com Dados</u></li>
+                <ul>
+                    <li>Imagine que, por exemplo, precisarmos alterar um dado ou atribuir o seu valor a uma outra variável. Para isso, vamos utilizar os operadores de atribuição e aritméticos, que são utilizados para manipular dados numéricos.</li>
+                    <li>Comecemos pelo operador de atribuição (=):</li>
+                    <img src="imagem/codigo_operador_de_atribuição.png">
+                    <li>No Quadro 2, vamos detalhar o que está acontecendo nesse Código:</li>
+                    <img src="imagem/exemplo_comentado_do_codigo.png">
+                    <li>Nesse exemplo, você deve ter percebido que utilizamos o operador de adição (+). No Quadro 3, temos os demais operadores aritméticos. Para fins de exemplo, considere a variável x declarada anteriormente, que armazena o valor 15.</li>
+                    <img src="imagem/operadores_aritméticos.png">
+                </ul>
+                <li><u>Como Manipular Textos</u></li>
+                <li><b>Strings</b> são sequências de caracteres, que formam um texto, e que podem ser representadas de três formas, em JS:</li>
+                <ul>
+                    <li>Aspas duplas. Ex.: "algum texto";</li>
+                    <li>Aspas simples. Ex.: 'algum texto';</li>
+                    <li>Acento grave. Ex.: `algum texto`.</li>
+                </ul>
+                <li>Não há diferença entre as aspas duplas e simples, mas há diferença com o acento grave, pois ele permite as chamadas <b>templates String</b>.</li>
+                <li>Quando trabalhamos com texto, o operador de adição (+) é utilizado para concatenar <b>Strings</b>.</li>
+                <li>Veja o exemplo a seguir:</li>
+                <img src="imagem/operador_de_adição_e_utilizado_para_concatenar_strings.png">
+                <li>Tenha cuidado ao utilizar o operador de adição (+) com números e textos, pois o resultado será sempre um texto:</li>
+                <img src="imagem/operador_de_adição_com_numeros_e_textos.png">
+                <li><u>Conversão de Tipos</u></li>
+                <ul>
+                    <li>Como vimos, não é necessário declarar os tipos das variáveis, pois, o JavaScript faz a tipagem dinâmica do dado que está trabalhando. Entretanto, toda a entrada de dados feita pelo usuário é sempre considerada uma <b>String</b> (texto), mesmo que a entrada sejam algarismos, como as notas de um aluno, por exemplo.</li>
+                    <li>Isso pode gerar um resultado incorreto ou indesejado, se considerarmos, por exemplo, que o operador de adição (+) tem comportamentos diferentes quando utilizado em texto e ou número. Numa operação na qual exista um número e um texto, o número sempre será convertido para texto e a operação ocorre como se todos os dados fossem <b>String</b>.</li>
+                    <li>Dessa forma, caso seja necessário realizar alguma operação matemática com os valores lidos por meio de uma caixa de diálogo prompt ou um formulário com campos de input, precisamos, inicialmente, convertê-los em números. Para isso, temos duas funções em JavaScript que convertem para número inteiro (int) ou decimal (float).</li>
+                    <li>Para converter um texto em número inteiro utilizando a função <b>parseInt</b>, usamos a sintaxe:</li>
+                    <img src="imagem/codigo_variavel_parseint.png">
+                    <li>Para converter um texto em número decimal utilizando a função <b>parseFloat</b>, usamos a sintaxe:</li>
+                    <img src="imagem/variavel_parseFloat.png">
+                    <li>No próximo exemplo, vamos solicitar ao usuário que digite dois números, por meio de uma caixa de diálogo prompt, e exibimos a soma desses dois números:</li>
+                    <img src="imagem/codigo_caixa_de_dialogo_prompt.png">
+                    <li>Antes de finalizarmos este capítulo, você percebeu que, nos exemplos, utilizamos comentários para destacar alguma informação importante do código? Pois bem. Sempre é uma boa prática inserirmos comentários em nossos códigos e, em JavaScript, podemos fazer isso de duas formas:</li>
+                    <li>Para comentários de várias linhas, utilizamos /* comentário */:</li>
+                    <img src="imagem/codigo_comentarios_de_varias_linhas.png">
+                    <li>Para comentários de uma única linha, utilizamos //comentário:</li>
+                    <img src="imagem/codigo_comentarios_de_uma_unica_linha.png">
+                </ul>
+            </ul>
+            <li><b>Comandos e Funções</b></li>
+            <ul>
+                <li>Em JavaScript, uma função é um bloco de códigos destinado a realizar alguma tarefa específica. Uma função pode ser executada por meio de uma chamada direta ou por meio de um evento.</li>
+                <li>A sintaxe de definição (ou declaração) de uma função, é apresentada na Figura 1:</li>
+                <img src="imagem/sintaxe_de_definicao.png">
+                <li>Os parâmetros devem ser separados por vírgula e constituem os valores que serão recebidos pela função quando ela é chamada. Dentro da função, os parâmetros comportam-se como variáveis locais, ou seja, somente existem no bloco em que foram declaradas.</li>
+                <li>Uma função pode ou não retornar uma resposta para o ponto de chamada. Caso necessite de retorno, utilizaremos o comando return. Quando não retorna resultado, a função tem comportamento de procedimento e, nesse caso, não utilizaremos o comando <b>return</b> (ao encerrar, a função retornará o valor <b>undefined</b>).</li>
+                <li>O exemplo a seguir define uma função simples chamada soma, que recebe dois números e retorna a soma deles:</li>
+                <img src="imagem/funcao_simples_chamada_soma.png">
+                <li>A partir da versão ES6, foi introduzido o formato <b>arrow function</b> para criar funções mais otimizadas. A sintaxe de uma <b>arrow function</b> contém a seguinte definição:</li>
+                <img src="imagem/formato_arrow_function.png">
+                <li>Vejamos o exemplo anterior (soma de dois números) no formato <b>arrow function</b>:</li>
+                <img src="imagem/formato_arrow_function_2.png">
+                <li>Bem mais simples, não é mesmo?</li>
+            </ul>
+            <li><b>Introdução às Decisões em JavaScript</b></li>
+            <ul>
+                <li>As decisões são importantes em programação, pois permitem executar diferentes ações com base em alguma expressão condicional. A Figura 2 mostra o fluxograma de um programa que lê a média de um aluno e imprime o resultado (“Aprovado” ou “Reprovado”), a partir de uma tomada de decisão (media >= 6.0).</li>
+                <img src="imagem/introducao_as_decisões_em_javascript.png">
+                <li>Em programação, as decisões precisam ser bem definidas, ou seja, não podem ser ambíguas. Para isso, precisamos tomar decisões que serão construídas a partir de expressões que utilizam operadores relacionais e lógicos.</li>
+                <li>Os operadores relacionais, mostrados no Quadro 4, são utilizados para comparações, como igualdades ou desigualdades. O resultado de uma comparação será sempre um valor lógico (verdadeiro – true, ou falso – false).</li>
+                <img src="imagem/operadores_relacionais.png">
+                <li>Os operadores lógicos, mostrados no Quadro 5, são utilizados para expressões que contenham mais de uma condição ou comparação. Para os exemplos, considere que <b>a = 3</b> e <b>b = 5</b>.</li>
+                <img src="imagem/operadores_lógicos.png">
+                <li><u>Estruturas de Decisão</u></li>
+                <ul>
+                    <li>São blocos de código executados somente se uma dada condição for satisfeita, utilizados para controlar o fluxo de execução dos programas. Em JavaScript, temos as seguintes estruturas de decisões:</li>
+                    <ul>
+                        <li><b>Decisão simples:</b> <u>if;</u></li>
+                        <li><b>Decisão composta:</b> <u>if... else;</u></li>
+                        <li><b>Decisão encadeada:</b> <u>if... else if... else...;</u></li>
+                        <li><b>Estrutura de decisão:</b> <u>switch… case.</u></li>
+                    </ul>
+                    <li>A decisão simples (if) permite avaliar se o resultado de uma expressão lógica é verdadeiro (true), e executa o bloco de códigos inserido nela. Veja a sintaxe e um exemplo:</li>
+                    <img src="imagem/codigo_estruturas_de_decisão_1.png">
+                    <img src="imagem/codigo_estruturas_de_decisão_2.png">
+                    <li>A decisão composta (if... else) avalia uma expressão lógica e, caso o resultado seja verdadeiro (true), executa o primeiro bloco de Códigos. Caso contrário, executa o segundo bloco de comandos (else).</li>
+                    <li>Veja a sintaxe e um exemplo:</li>
+                    <img src="imagem/codigo_decisao_composta_1.png">
+                    <img src="imagem/codigo_decisao_composta_2.png">
+                    <li>A estrutura encadeada (if... else if... else...) é utilizada quando temos várias condições que devem ser testadas. Sua sintaxe é exibida a seguir:</li>
+                    <img src="imagem/codigo_estrutura_encadeada.png">
+                    <li>O exemplo completo, utilizando o condicional encadeado, fica assim:</li>
+                    <img src="imagem/exemplo_completo_utilizando_o_condicional_encadeado.png">
+                    <li>A estrutura switch… case é utilizada quando temos várias condições simples, conforme a sintaxe:</li>
+                    <img src="imagem/estrutura_switch_case.png">
+                    <li>Observações importantes quanto ao uso dessa estrutura:</li>
+                    <ul>
+                        <li>Para cada caso, devemos colocar o comando <b>break</b>, que irá finalizar o caso e evitar que o caso posterior seja executado;</li>
+                        <li>O <b>default</b> é opcional. Ele é executado quando nenhum caso anterior é acionado;</li>
+                        <li>Os valores podem ser <b>String</b>, inteiros, caracteres ou reais;</li>
+                        <li>Não podemos fazer comparações no case, como x &gt; y, por exemplo.</li>
+                    </ul>
+                    <li>Um exemplo completo do uso é apresentado a seguir:</li>
+                    <img src="imagem/exemplo_completo_do_uso.png">
+                </ul>
+            </ul>
+            <li><b>Repetindo Códigos</b></h3>
+            <ul>
+                <li>Muitas vezes, precisamos concluir de modo rápido e eficiente tarefas repetitivas, como uma tabuada, por exemplo. Para isso, as Linguagens de Programação têm as estruturas de repetição ou laços de repetição (loop).</li>
+                <li>Essas estruturas são utilizadas quando necessitamos repetir um bloco de instruções um número específico de vezes ou enquanto uma condição for verdadeira. Em JavaScript veremos as estruturas <b>for</b> e <b>while</b>.</li>
+                <li><u>Estrutura de Repetição for</u></li>
+                <ul>
+                    <li>É compacta, pois inicialização, condição e atualização estão reunidas na declaração do laço. Utilizamos essa estrutura quando sabemos exatamente o número de repetições que serão feitas.</li>
+                    <li>Sua sintaxe é:</li>
+                    <img src="imagem/codigo_instrucoes_de_repetição_for.png">
+                    <li>Vejamos um exemplo que conta de 0 até 9 e exibe um <b>alert</b> na tela com o valor da variável <b>cont</b>:</li>
+                    <img src="imagem/alert_com_o_valor_da_variavel_cont.png">
+                    <li>Algumas observações sobre o uso do for são:</li>
+                    <ul>
+                        <li>A estrutura utiliza uma variável inteira para controlar o número de vezes que deve ser repetida a execução das instruções;</li>
+                        <li>É inicializada com um valor qualquer e é incrementada ou decrementada a cada iteração;</li>
+                        <li>A condição, geralmente, verifica se essa variável já chegou a determinado valor para decidir se o laço deve ser encerrado.</li>
+                    </ul>
+                </ul>
+                <li><u>Estrutura de Repetição while</u></li>
+                <ul>
+                    <li>Executa um bloco de instruções enquanto certa condição for verdadeira.</li>
+                    <li>Sua sintaxe é:</li>
+                    <img src="imagem/bloco_de_instruções_enquanto_certa_condição_for_verdadeira.png">
+                    <li>O exemplo a seguir conta de 0 até 9 e exibe um <b>alert</b> na tela com o valor da variável <b>cont</b>:</li>
+                    <img src="imagem/codigo_alert_na_tela_com_o_valor_da_variavel_cont.png">
+                    <li>Algumas observações sobre o uso da estrutura while são:</li>
+                    <ul>
+                        <li>A variável de controle deve ser inicializada antes do bloco;</li>
+                        <li>No interior do laço, é inserida uma instrução que atualiza a variável de controle. Com isso, em algum momento, a condição se tornará falsa.</li>
+                    </ul>
+                </ul>
+                <li><u>Parando um Laço</u></li>
+                <ul>
+                    <li>Podemos usar comando <b>break</b> para parar um determinado laço de repetição conforme alguma condição no nosso Código. No exemplo a seguir, vamos somar uma quantidade indeterminada de valores digitados pelo usuário. Como não sabemos exatamente a quantidade, utilizamos uma condição <b>if</b> para parar o laço. Assim, quando o usuário pressionar a tecla <b>enter</b> sem digitar um valor, vamos encerrar o laço e exibir o resultado da soma:</li>
+                    <img src="imagem/codigo_parando_um_laço.png">
+                </ul>
+                <li><u>Continuando um Laço</u></li>
+                <ul>
+                    <li>O comando continue interrompe a iteração atual e força o laço a continuar para a próxima iteração. No exemplo a seguir, desejamos imprimir somente os números ímpares de 0 até 10. Portanto, sempre que o número for par, o condicional if executa o comando continue e pula para a próxima iteração, ignorando a impressão do número par:</li>
+                    <img src="imagem/codigo_continuando_um_laço.png">
+                </ul>
+            </ul>
+            <li><b>Vetores</b></h3>
+                <ul>
+                    <li>Vetores podem ser definidos como uma coleção de elementos ou itens que respondem a um mesmo nome e que podem ser acessados segundo a posição (índice) que ocupam dentro do vetor.</li>
+                    <li>Na Figura 3, temos a representação gráfica de um vetor:</li>
+                    <img src="imagem/Vetores.png">
+                    <li>Para criar um vetor em JavaScript, utilizamos o objeto <b>Array</b>. Esse objeto, além de criar um vetor em memória, também nos fornece diversos métodos para manipular o vetor criado.</li>
+                    <li>Vejamos um exemplo com alguns vetores criados em JavaScript:</li>
+                    <img src="imagem/codigo_vetores_sem_posicao.png">
+                    <li>Perceba que, em todos os casos anteriores, podemos inserir mais posições sempre que necessário. O Vetor não tem um tamanho fixo.</li>
+                    <li>Podemos visualizar ou atribuir um valor para um vetor, acessando cada posição por meio do índice, que deve ficar entre colchetes [...].</li>
+                    <li>Veja o exemplo a seguir:</li>
+                    <img src="imagem/vetor_que_nao_tem_tamanho_fixo.png">
+                    <li>É bastante comum, quando trabalhamos com vetores, utilizarmos uma estrutura de repetição para acessar suas posições. A mais utilizada é a estrutura for, porém, nada impede o comando while seja utilizado. Nos exemplos a seguir, observe a comparação entre o vetor sem o uso de uma estrutura de repetição e com o uso da estrutura for:</li>
+                    <img src="imagem/vetor_sem_o_uso_da_estrutura_for.png">
+                    <img src="imagem/vetor_com_o_uso_de_repeticao.png">
+                    <li>É importante notar como o uso correto da estrutura de repetição torna mais fácil percorrer um vetor para consultas ou atualizações. Porém, o exemplo acima funciona muito bem para um vetor de somente três elementos! Na prática, é comum que o tamanho do vetor seja desconhecido do programador!</li>
+                    <li>Isso poderia constituir um problema, porém, podemos utilizar a propriedade <b>length</b>, que retorna o número de elementos de um vetor.</li>
+                    <li>Para finalizarmos esta Unidade, vamos lembrar-nos de que nosso vetor é dinâmico e, portanto, permite que alteremos um valor ou até mesmo façamos a inclusão de um novo elemento. No último caso, estamos falando do método <b>push()</b>, utilizado para adicionar um novo item ao final do vetor.</li>
+                    <li>No exemplo final, temos um vetor contendo três fabricantes de carros. Nosso objetivo é incluir um novo fabricante e alterar o nome do terceiro item, que está grafado incorretamente ("Hundai"). Finalmente, utilizaremos o laço for combinado com a propriedade length, para listar todos os elementos do vetor:</li>
+                    <img src="imagem/a_propriedade_lenght_retorna_o_tamanho_do_vetor.png">
+                    <li>Veja, a seguir, no Quadro 6 alguns dos principais métodos utilizados com vetores em JavaScript.</li>
+                    <li>Considere o vetor vogais = ["a","e","i"]:</li>
+                    <img src="imagem/métodos_com_vetores.png">
+                </ul>
+            </ul>
+        </ul>
+    </p>
+    <h2>Unidade 4</h2>
+    <p>
+        <h3>jQuery, Persistência e Requisições Assíncrona</h3>
+        <ul>
+            <li><b>Introdução ao jQuery</b></li>
+            <ul>
+                <li>O jQuery é uma biblioteca JavaScript criada por John Resig e disponibilizada como software livre e aberto, ou seja, de código open source, fornecida gratuitamente. Sua biblioteca é utilizada para adicionar interatividade e dinamismo às páginas web como, por exemplo, com funções de navegação, criação de animações e efeitos, funções para registrar/tratar eventos e funções para desenvolver aplicações AJAX.</li>
+                <li>A biblioteca jQuery nada mais é do que um arquivo JavaScript que deverá ser incluído na página em que serão aplicados os efeitos desejados. Esse arquivo pode ser adicionado a partir de um arquivo público remoto conhecido como CDN, ou a partir de um arquivo local, incluído na pasta do projeto. Observe o exemplo a seguir que faz uso da biblioteca jQuery a partir de um repositório remoto:</li>
+                <img src="imagem/uso_da_biblioteca_jquery.png">
+                <li><u>Seletores e Operadores</u></li>
+                <ul>
+                    <li>A finalidade do jQuery é controlar o comportamento de uma página web e, para tanto, é necessário encontrar os elementos HTML que constituem a página e terão seu comportamento modificado. Nesse sentido, a sintaxe do jQuery é bastante simples, veja a Figura 1.</li>
+                    <img src="imagem/seletores_e_operadores.png">
+                    <li>Vejamos alguns exemplos de como utilizar o jQuery para ter acesso aos elementos de uma página web:</li>
+                    <ul>
+                        <li><b>$("*"):</b> seleciona todos os elementos da página;</li>
+                        <li><b>$("tipo_do_elemento"):</b> seleciona todos os elementos de um tipo escolhido, basta colocar o nome do elemento entre as aspas. Exemplo: $("p").hide() esconde todos os elementos &lt; p &gt;;</li>
+                        <li><b>$("#id_do_elemento"):</b> seleciona o elemento pelo id. Um elemento do html possui um atributo id, esse atributo id é informado juntamente com o caracter # para o jQuery ter acesso. Exemplo: $("#main").hide() oculta o elemento com id="main";</li>
+                        <li><b>$(".nome_da_classe"):</b> seleciona os elementos da classe. Dentro de um seletor, o caractere ponto (.) refere-se à classe (atributo “class” da tag HTML). Exemplo: $(".main").hide() oculta o elemento com class="main";</li>
+                    </ul>
+                    <li>Para utilizar as funcionalidades do jQuery, o documento deve estar todo carregado. Isso evita erro quando tentamos executar um código antes que o documento termine de carregar. Observe o exemplo a seguir:</li>
+                    <img src="imagem/funcionalidades_do_jquery.png">
+                    <li>Se você digitou o código acima, pôde perceber que seu navegador trocou duas ocorrências do título “Aprendendo jQuery” por “Combinando seletores”. No Quadro 1, analisaremos o que está acontecendo:</li>
+                    <img src="imagem/quadro_ jquery.png">
+                    <li>Podemos também substituir $(document).ready(function() pela chamada de sintaxe abreviada, que é a seguinte:</li>
+                    <img src="imagem/$(document).ready(function().png">
+                    <li>Com jQuery, podemos selecionar ou ter acesso aos elementos de acordo com os atributos do HTML. Para isso, basta informar o atributo, o operador e o valor dentro de colchetes ([]), conforme a sintaxe: $([atributo operador valor]).</li>
+                    <li>Os operadores disponíveis são listados no Quadro 2:</li>
+                    <img src="imagem/quadro_ jquery_2.png">
+                    <li>Vejamos como podemos aplicar os operadores no jQuery. Observe os exemplos abaixo:</li>
+                    <ul>
+                        <li><b>$("[name='txtNome']"):</b> seleciona todos os elementos cujo atributo 'name' seja igual 'txtNome';</li>
+                        <li><b>$("[type='text'][name='txtInfo']"):</b> seleciona e define o valor de todos os elementos do tipo 'input', cujo atributo nome seja igual a 'txtInfo'.</li>
+                    </ul>
+                </ul>
+                <li><u>Tratamentos de Eventos</u></li>
+                <ul>
+                    <li>Uma das principais características do jQuery é sua capacidade para responder a eventos em um documento web. Os eventos podem ser, por exemplo, uma ação do usuário:</li>
+                    <ul>
+                        <li>Movendo o mouse sobre um elemento;</li>
+                        <li>Selecionando um radio button;</li>
+                        <li>Clicando sobre um elemento.</li>
+                    </ul>
+                    <li>A seguir, vejamos alguns dos eventos mais comuns utilizados com jQuery, que estão listados abaixo:</li>
+                    <ul>
+                        <li><b>$(document).ready(função):</b> como visto anteriormente, aguarda a página toda ser carregada para executar uma função;</li>
+                        <li><b>$(seletor).click(função):</b> quando o elemento indicado no seletor for selecionado e receber o evento click, a função é executada;</li>
+                        <li><b>$(seletor).dbclick(função):</b> quando o elemento indicado no seletor for selecionado e receber o evento duplo click, a função é executada;</li>
+                        <li><b>$(seletor).change(função):</b> quando o elemento indicado no seletor for selecionado e sofrer uma alteração, então a função será executada;</li>
+                        <li><b>$(seletor).focus(função):</b> quando o elemento indicado no seletor receber o foco, a função é executada.</li>
+                    </ul>
+                    <li>Agora vamos aplicar esse conceito no exemplo a seguir, no qual o elemento </p> é ocultado quando clicamos sobre ele:</li>
+                    <img src="imagem/método_focus().png">
+                </ul>
+                <li><u>Métodos</u></li>
+                <ul>
+                    <li>A seguir, vamos listar alguns dos principais métodos utilizados para manipular elementos HTML:</li>
+                    <ul>
+                        <li><b>$(seletor).text(conteúdo):</b> acessa o texto dos elementos;</li>
+                        <li><b>$(seletor).val(conteúdo):</b> acessa os valores dos elementos contidos em um formulário. Os elementos podem ser do tipo input, select e radio;</li>
+                        <li><b>$(seletor).html(conteúdo):</b> recupera ou define o conteúdo dos elementos, por exemplo, o código HTML que está dentro de uma div;</li>
+                        <li><b>$(seletor).append(conteúdo):</b> insere o conteúdo ao final do elemento;</li>
+                        <li><b>$(seletor).prepend(conteúdo):</b> insere o conteúdo no início do elemento;</li>
+                        <li><b>$(seletor).after(conteúdo):</b> insere o conteúdo informado após o elemento;</li>
+                        <li><b>$(seletor).before(conteúdo):</b> insere o conteúdo informado antes do elemento.</li>
+                    </ul>
+                    <li>Vejamos um exemplo completo que se utiliza dos métodos citados acima:</li>
+                    <li>Observe na Figura 2 a execução do código anterior:</li>
+                    <img src="imagem/evento_de_clique_é_acionado_no_elemento_b1.png">
+                </ul>
+                <li><u>Manipulando CSS com JQuery</u></li>
+                <ul>
+                    <li>O jQuery nos permite manipular com facilidade os seletores alinhados com CSS e CSS3, ou seja, é possível ter acesso às propriedades de alteração do estilo de forma simples e prática, evitando-se as funções padrão do JavaScript. Por meio do uso do método css() do jQuery, podemos definir ou retornar uma ou mais propriedades de estilo para elementos selecionados.</li>
+                    <li>Vejamos como isso funciona, começando com a sintaxe para retornar o valor de uma propriedade CSS específica, que é dada por: $(seletor).css("nome_da_propriedade"). Vamos aplicar esse conceito no exemplo a seguir, que retorna a cor de fundo do elemento &lt; p &gt; :</li>
+                    <img src="imagem/codigo_manipulando_css_com_jquery.png">
+                    <li>Agora vamos definir uma propriedade específica do CSS utilizando a seguinte sintaxe: $(seletor).css("nome_da_propriedade", "valor"). O exemplo que utilizaremos para aplicar o conceito é muito parecido com o anterior. Porém agora vamos mudar a cor de fundo do parágrafo quando clicamos no botão:</li>
+                    <img src="imagem/propriedade_específica_do_css_jquery.png">
+                    <li>É possível definirmos várias propriedades CSS para um único elemento utilizando a sintaxe: $(seletor).css({"propriedade1": "valor", "propriedade2": "valor", ...}). Vamos modificar nosso exemplo anterior para que, ao clicarmos no botão, além da cor de fundo (background-color), o tamanho da fonte seja alterado. Para isso, teremos que alterar o código para:</li>
+                    <img src="imagem/várias_propriedades_css_para_um_único_elemento_utilizando.png">
+                </ul>
+            </ul>
+            <li><b>WebStorage (HTML5)</b></li>
+            <ul>
+                <li>Como o lançamento do HTML5, a retenção de dados no lado do cliente ficou mais prática e eficiente por meio da API WebStorage, que oferece mecanismos para que o navegador possa armazenar dados por meio de um conceito chave/valor, com espaço maior de armazenamento e sem o envio das informações salvas para o servidor.</li>
+                <li>A compatibilidade da API com os diversos navegadores existentes no mercado é exibida no Quadro 3.</li>
+                <img src="imagem/compatibilidade_da_api_com_os_diversos_navegadores_existentes.png">
+                <li>O <i>WebStorage</i> fornece dois objetos para armazenar dados no cliente:</li>
+                <ul>
+                    <li><i>LocalStorage</i>, que armazena dados sem data de validade, ou seja, os dados somente serão excluídos pela aplicação ou pelo usuário;</li>
+                    <li><i>SessionStorage</i>, que armazena dados para uma sessão (os dados são perdidos quando a guia do navegador é fechada).</li>
+                </ul>
+                <li>O armazenamento web utiliza-se de um conceito de objetos, que são conjuntos contendo pares de chave/valor. Observe na Figura 4 que a chave “nome” armazena o valor “Marco”.</li>
+                <img src="imagem/armazenamento_web.png">
+                <li>Para manipular e acessar os dados armazenados, vamos utilizar os seguintes métodos:</li>
+                <ul>
+                    <li><b>SetItem(nome, valor):</b> utilizado para gravar dados. Exemplo: localStorage.setItem("nome","Maria");</li>
+                    <li><b>GetItem(nome):</b> utilizado para recuperar dados. Exemplo: localStorage.getItem("nome");</li>
+                    <li><b>RemoveItem(nome):</b> utilizado para apagar um dado gravado. Exemplo: localStorage.removeItem("nome");</li>
+                    <li><b>Clear():</b> utilizado para apagar todos os dados do armazenamento. Exemplo: localStorage.clear();</li>
+                </ul>
+                <img src="imagem/formulário_de_cadastro_de_alunos.png">
+                <li>Para manipular os dados, vamos utilizar jQuery e criaremos três métodos:</li>
+                <ul>
+                    <li><b>GravarDados():</b> está associado ao botão “Gravar” e é responsável por salvar os dados do formulário no armazenamento local;</li>
+                    <li><b>CarregarDados():</b> está associado ao botão “Carregar” e é responsável por carregar os dados a partir do armazenamento local para o formulário;</li>
+                    <li><b>ApagarDados():</b> está associado ao botão “Apagar” e é responsável por apagar todos os dados do armazenamento local.</li>
+                </ul>
+                <li>O código para implementação das funções é mostrado a seguir:</li>
+                <img src="imagem/codigo_para_implementação_das_funções.png">
+            </ul>
+            <li><b>AJAX</b></li>
+            <ul>
+                <li>O AJAX é o acrônimo de Asynchronous JavaScript and XML, ou JavaScript e XML Assíncronos, em bom português. Trata-se de um conjunto de técnicas para carregamento de conteúdo em uma página web que permite que aplicações trabalhem de modo assíncrono, tornando o conteúdo web mais interativo para o usuário, uma vez que a troca de dados com o servidor ocorre em segundo plano. Na prática, isso significa que conseguimos atualizar partes de uma página web sem a necessidade de recarregar a página inteira.</li>
+                <li>Quando trabalhamos com AJAX, utilizamos o objeto XMLHttpRequest, que é manipulado por meio do JavaScript e que efetua a comunicação com o servidor por meio de requisições HTTP.</li>
+                <li>O XMLHttpRequest é um objeto nativo padronizado nos navegadores atuais, mas foi implementado originalmente pela Microsoft como controle ActiveX nas versões antigas do Internet Explorer. Desde então, outros navegadores passaram a implementar uma classe XMLHttpRequest, que permite suporte aos métodos e propriedade desse objeto.</li>
+                <li>A biblioteca jQuery oferece uma vasta documentação para se trabalhar as requisições AJAX. O principal método para executarmos uma solicitação é o $.ajax(), que é utilizado por todos os outros métodos jQuery AJAX.</li>
+                <li>A implementação com $.ajax(), considerada de nível inferior, oferece um conjunto vasto de opções não disponíveis em funções chamadas de alto nível, como $.get() e $.post(), que são mais fáceis de se utilizar.</li>
+                <li>Na requisição, precisamos informar um seletor que vai dar início à execução, o endereço do arquivo que contém os dados que serão retornados, o tipo de dado retornado e o que será feito com ele. No exemplo a seguir, utilizamos a função $.get() para alterar o conteúdo de um parágrafo:</li>
+                <img src="imagem/o_endereço_do_arquivo_que_contém_os_dados_que_serão_retornados.png">
+                <li>Quando o botão “Clique aqui” for acionado, uma requisição será iniciada e os dados do arquivo “dados.txt” serão carregados para a página web, substituindo o conteúdo do parágrafo. Veja a seguir o código comentado no Quadro 4:</li>
+                <img src="imagem/codigo_comentado_no_quadro.png">
+                <li>Usar os métodos ajax() do jQuery torna as requisições mais simples do que usar o método nativo do JavaScript, o XMLHttpRequest.</li>
+                <li>Entretanto, uma função mais moderna que tem se tornado muito popular é o Fetch, que fornece uma implementação mais flexível e fácil de se fazer requisições para busca de dados de forma assíncrona pela rede. O Fetch veio para substituir o objeto XMLHttpRequest e tem se tornado padrão nas versões mais atuais dos navegadores Firefox Chrome, mas, por se tratar de uma tecnologia nova, navegadores mais antigos não reconhecem essa funcionalidade.</li>
+                <li>Uma forma de verificar se o navegador possui suporte é a seguinte:</li>
+                <img src="imagem/forma_de_verificar_ se_o_navegador_possui_suporte.png">
+                <li>No exemplo a seguir, vamos fazer uma requisição Fetch para obter a lista de repositórios de um usuário do github:</li>
+                <img src="imagem/repositórios_de_um_usuário_do_github.png">
+                <li>O código comentado do exemplo é mostrado abaixo no Quadro 5:</li>
+                <img src="imagem/código_comentado.png">
+            </ul>
+        </ul>
+    </p>
+    <h2>Unidade 5</h2>
+    <p>
+        <h3>Introdução ao Vue.js</h3>
+        <ul>
+            <li><b>Afinal, o que é Vue.js?</b></li>
+            <ul>
+                <li>A popularidade do JavaScript entre os desenvolvedores web fez com que surgissem, ao longo do tempo, uma enorme variedade de frameworks front-end, destinados aos mais variados propósitos, como os mais utilizados no mercado atualmente: React, Angular e Vue.js.</li>
+                <li>Nesta Unidade, falaremos sobre o Vue.js, que é um framework JavaScript de código aberto (opens source) criado por Evan You, em 2014.</li>
+                <li>Utilizado no desenvolvimento de interfaces de usuário e SPA (Single Page Applications), o Vue.js foi projetado para ser progressivo, o que implica dizer que o desenvolvedor pode utilizá-lo tanto como uma biblioteca simples, com a finalidade de adicionar funcionalidades em uma página web, ou usá-lo como um framework completo para construir aplicativos mais completos e complexos.</li>
+                <li>Conhecido por sua simplicidade e baixa curva de aprendizagem, ele se utiliza de uma arquitetura baseada em componentes reutilizáveis e independentes, que podem ser combinados para desenvolver interfaces complexas, e diretivas, que são atributos que adicionam funcionalidades e comportamentos dinâmicos aos elementos HTML.</li>
+                <li>Como uma comunidade muito ativa e farta documentação oficial (inclusive em Português), o Vue.js é um dos mais populares frameworks entre os desenvolvedores, como mostrou uma pesquisa realizada pelo StackOverFlow em maio de 2022.</li>
+                <li>De modo geral, o Vue.js é uma excelente escolha para projetos web que precisam de um framework reativo, modular, leve e fácil de aprender. Dentre as principais vantagens de sua utilização, podemos destacar as seguintes:</li>
+                <ul>
+                    <li><b>Fácil aprendizagem:</b> uma aplicação básica em Vue.js requer apenas um conhecimento básico de HTML, CSS e JavaScript;</li>
+                    <li><b>Performance:</b> por ser leve e rápido, ele tem bom desempenho para aplicações de pequeno ou grande porte;</li>
+                    <li><b>Flexibilidade:</b> pode ser integrado facilmente com outras bibliotecas e frameworks;</li>
+                    <li><b>Modular e reativo:</b> os componentes são reutilizáveis de facilmente compartilhados e sua interface é atualizada quando os dados são alterados.</li>
+                </ul>
+                <li>Entretanto, considerando as desvantagens do Vue.js, percebemos que a complexidade do paradigma reativo pode ser um problema no início. Além disso, em comparação com outros frameworks SPA, o Vue.js possui recursos um pouco mais limitados.</li>
+                <li><u>Primeiros Passos</u></li>
+                <ul>
+                    <li>Para começar a utilizar o Vue.js você precisa adicioná-lo ao seu projeto. Existem quatro formas principais para fazer isso, dependendo de suas necessidades:</li>
+                    <ul>
+                        <li>Importar a partir de uma rede de distribuição de conteúdo (CDN). Esta opção é recomendada apenas para prototipação ou aprendizagem;</li>
+                        <li>Baixar o arquivo .js e hospedá-lo em seu servidor web, que é a opção recomendada para projetos em produção;</li>
+                        <li>Instalação a partir do npm, que é recomendado para aplicações de larga escala;</li>
+                        <li>Utilização da ferramenta CLI oficial, que oferece recursos prontos para o desenvolvimento moderno de front-end.</li>
+                    </ul>
+                    <li>Nos exemplos desta Unidade, utilizaremos a primeira opção, porém, recomendamos que você teste e se familiarize com as demais formas para adicionar o Vue.js ao seu projeto.</li>
+                    <li>Antes de partirmos para nosso primeiro exemplo prático, recomendamos que você instale a extensão Vue.js devtools, disponível para navegadores como o Chrome (Figura 1) e o Firefox, que permitirá inspecionar e realizar debug por meio de uma interface mais amigável.</li>
+                    <img src="imagem/vue.js_devtools_na_chrome_web_store.png">
+                </ul>
+            </ul>
+            <li><b>Hello World, Vue.js</b></li>
+            <ul>
+                <li>Nossa primeira aplicação prática no mundo do Vue.js será um Hello World, cujo código é apresentado no exemplo a seguir:</li>
+                <img src="imagem/hello_world_vue.js.png">
+                <li>Neste exemplo, criamos uma instância Vue simples que renderiza a mensagem "Hello World, Vue.js!" em um elemento HTML. Não se preocupe se o código pareceu um pouco confuso para você, vamos comentar cada parte no Quadro 1:</li>
+                <img src="imagem/renderiza_a_mensagem_hello_world_vue.js.png">
+                <li>Em nosso exemplo, o elemento HTML que será utilizado como destino é uma <b>div</b> cujo <b>id</b> é <b>app</b>. A interpolação de dados irá renderizar a mensagem nesse elemento e, para isso, utilizamos chaves duplas <b>{{}}</b> que contêm a propriedade que se deseja exibir, neste caso <b>mensagem</b>.</li>
+                <li>Este é um exemplo simples, mas que já mostra um pouco das características do framework. Nosso próximo passo será expandir os conceitos trabalhados aqui para que possamos criar aplicativos mais complexos e, para isso, falaremos um pouco sobre as diretivas e componentes.</li>
+            </ul>
+            <li><b>Conhecendo o Vue.js</b></li>
+            <ul>
+                <li>A arquitetura do Vue.js nos permite construir aplicações que renderize dados no DOM (Document Object Model) utilizando-se uma sintaxe de template bastante simples. O DOM é uma representação dos estilos, elementos e conteúdo de uma página HTML, que mudam na medida em que há uma interação do usuário, o que exige uma atualização constante do conteúdo pelo navegador.</li>
+                <li>Na manipulação de dados o Vue.js utiliza-se de diretivas integradas ao HTML, que oferecem flexibilidade aos elementos. Já no conceito de template são utilizados os componentes, que permitem a reutilização de modelos que podem ser vinculados à página.</li>
+                <li>Além disso, como vimos no exemplo anterior, a interpolação é uma forma simples, porém, poderosa de exibir dados dinamicamente. Veremos, a seguir, como esses conceitos se integram à construção de páginas web.</li>
+                <li><u>Criando uma instância de aplicação Vue</u></li>
+                <ul>
+                    <li>Uma aplicação Vue começa com a criação de uma nova instância, que é feita com a função <b>createApp</b>, seguida de um conjunto de propriedades que contém informações necessárias à configuração do componente raiz da aplicação. Esse componente constitui o ponto de partida para a renderização da aplicação, que é montada em um elemento HTML do DOM, por meio do método <b>mount</b>, que retorna a instância do componente raiz:</li>
+                    <img src="imagem/método_mount.png">
+                    <li>Existem várias opções que adicionam propriedades à instância do componente, tais como:</li>
+                    <ul>
+                        <li><b>data:</b> retorna um objeto que contém dados da instância;</li>
+                        <li><b>methods:</b> configura um objeto que contém métodos referentes à instância do Vue;</li>
+                        <li><b>computed:</b> calcula valores baseados em outros dados;</li>
+                        <li><b>watch:</b> observa as alterações em dados específicos definidos na propriedade data;</li>
+                        <li><b>template:</b> define a estrutura e aparência do componente.</li>
+                    </ul>
+                    <li>Toda instância Vue possui um ciclo de vida que passa por uma série de etapas desde sua criação até sua destruição. Desta forma, existem propriedades opcionais que caracterizam os diferentes estados de vida de uma instância Vue, que são:</li>
+                    <ul>
+                        <li><b>beforeCreate:</b> a instância ainda não foi criada e, portanto, as propriedades de dados e métodos ainda não estão disponíveis;</li>
+                        <li><b>created:</b> a instância foi criada, porém, ainda não está pronta para ser montada. As propriedades de dados e métodos já estão disponíveis;</li>
+                        <li><b>beforeMount:</b> momento antes da instância ser montada no elemento HTML;</li>
+                        <li><b>mounted:</b> a instância foi montada no DOM e está pronta para ser utilizada;</li>
+                        <li><b>beforeUpdate:</b> a instância foi atualizada, porém, as mudanças ainda não foram refletidas no DOM;</li>
+                        <li><b>updated:</b> a instância foi atualizada e agora as mudanças já foram refletidas no DOM;</li>
+                        <li><b>beforeDestroy:</b> momento antes da instância ser destruída;</li>
+                        <li><b>destroyed:</b> momento em que a instância é destruída e não está mais disponível.</li>
+                    </ul>
+                    <li>Veja, a seguir, um exemplo simples do ciclo de vida de uma instância do Vue.js:</li>
+                    <img src="imagem/ciclo_de_vida_de_uma_instancia_do_vue.js.png">
+                    <li>No menu do navegador, procure por “Ferramentas do desenvolvedor” e observe os estados de vida do Vue.js. Perceba que o estado <b>updated()</b> somente é disparado quando alteramos o campo <b>input</b> para “Olá mundo!”, como mostra a Figura 2.</li>
+                    <img src="imagem/ciclo_de_vida_vue.js.png">
+                </ul>
+                <li><u>Diretivas do Vue.js</u></li>
+                <ul>
+                    <li>Sinteticamente, podemos definir as diretivas como sendo atributos adicionados a um elemento HTML que estendem seu comportamento e funcionalidade. Na prática, teremos um comportamento que reage a interações do usuário, atualizando a interface dinamicamente.</li>
+                    <li>No Vue.js as diretivas são precedidas pelo prefixo <b>"v-"</b>, são aplicadas aos elementos HTML e possuem comportamentos distintos, que são configuráveis por meio de opções, como veremos mais adiante. As principais diretivas Vue.js são:</li>
+                    <ul>
+                        <li><b>v-model:</b> é utilizada no conceito “two-way-databind”, ou seja, permite criar um vínculo bidirecional de dados entre um elemento HTML (como o <b>input</b>, por exemplo) e um componente Vue.js. A diretiva <b>v-model</b> permite atualização automática do componente à medida que um campo de formulário recebe informações. O two-way-databind é um dos conceitos mais relevantes para o desenvolvimento de aplicações web interativas e é uma das principais vantagens do Vue.js em relação a outros frameworks.</li>
+                    </ul>
+                    <li>Vejamos um exemplo simples, que permite ao Vue observar o valor do campo <b>input</b> e atualizar a variável <b>nome</b>.</li>
+                    <img src="imagem/two_way_databind.png">
+                    <ul>
+                        <li><b>v-bind:</b> é utilizada para vincular, dinamicamente, um valor ao atributo de um elemento HTML como o src de uma imagem. Veja o exemplo a seguir:</li>
+                        <li>&lt; img v-bind:src="imagemUrl" alt="Imagem" &gt;</li>
+                        <li><b>v-if:</b> é utilizada para renderizar um elemento HTML com base em uma expressão condicional. Caso o resultado da expressão seja true (verdadeiro) o elemento HTML será renderizado; caso contrário, não. Veja o seguinte exemplo:</li>
+                        <img src="imagem/v_if.png">
+                    </ul>
+                    <li>Agora, a imagem será exibida somente se a propriedade <b>mostrarImagem</b> for <b>true</b> (verdadeira). Para que o exemplo funcione adequadamente, essa propriedade foi adicionada ao modelo de dados com o valor <b>true</b>.</li>
+                    <ul>
+                        <li><b>v-on:</b> é utilizada para anexar eventos a um elemento HTML, permitindo executar um método a partir da interação do usuário, como o clique de um botão.</li>
+                    </ul>
+                    <li>Para nosso próximo exemplo, criaremos um botão para ocultar/exibir a imagem, utilizando as diretivas <b>v-if</b> e <b>v-on</b> conjuntamente. O código HTML ficou assim:</li>
+                    <img src="imagem/v_if_e_v_on.png">
+                    <li>A diretiva <b>v-on</b> adiciona um ouvinte de evento de clique ao botão e, quando clicamos nele, o método <b>"alternarImagem"</b> é chamado, alterando o valor da propriedade <b>mostrarImagem</b>, do modelo de dados entre <b>true</b> e <b>false</b>. Observe o script Vue como ficou:</li>
+                    <img src="imagem/alternarImagem.png">
+                    <li>No exemplo, <b>methods</b> refere-se à propriedade do Vue.js, que contém todos os métodos que podem ser chamados em resposta a eventos, ou para executar alguma tarefa especificamente criada pelo desenvolvedor da aplicação.</li>
+                    <ul>
+                        <li><b>v-for:</b> é utilizada para renderizar dinamicamente uma lista de elementos, iterando cada item de base dados de acordo com um template. Essa diretiva tem uma sintaxe na forma <b>item in items</b>, na qual <b>items</b> corresponde à base de dados, e <b>item</b> é um elemento dessa base que está sendo iterado.</li>
+                    </ul>
+                    <li>O template para o próximo exemplo é dado:</li>
+                    <img src="imagem/template.png">
+                    <li>A diretiva <b>v-for</b> itera sobre o <b>array</b> de nomes para gerar uma lista na qual para cada nome é gerado um elemento <b>li</b>. O <b>array</b> de nomes foi criado dentro do objeto <b>data</b>:</li>
+                    <img src="imagem/data.png">
+                    <ul>
+                        <li><b>v-show:</b> é utilizada de forma semelhante ao <b>v-if</b> para controlar a exibição condicional de elementos com base em uma expressão. Vejamos um exemplo completo:</li>
+                        <img src="imagem/v_show.png">
+                    </ul>
+                    <li>Neste exemplo, um botão alterna a visibilidade do elemento HTML &lt; p &gt;, ocultando ou exibindo a mensagem. Observe que, diferentemente do exemplo com <b>v-if</b>, aqui optamos por não utilizar um método. Assim, alteramos o valor da propriedade <b>mostrarMsg</b> na própria diretiva <b>v-on</b>. Apesar de não ser uma prática recomendada, podemos utilizar dessa forma sempre que a implementação for suficientemente simples para isso.</li>
+                    <li>A despeito do resultado na prática ser o mesmo, a principal diferença entre o <b>v-if</b> e o <b>v-show</b> está na forma como cada um altera a visibilidade de um elemento utilizando o CSS. Enquanto o <b>v-if</b> insere ou remove elementos no DOM, o <b>v-show</b> somente altera a propriedade <b>display</b> para <b>none</b>, ou seja, o elemento ainda existe no DOM, somente sua visibilidade foi alterada.</li>
+                    <li>O <b>v-show</b> é mais leve e rápido, sendo recomendado quando não precisamos de grandes mudanças na estrutura da página, apenas alterar a visibilidade de um elemento por meio do CSS. Já o <b>v-if</b>, devido à performance, deve ser utilizado quando a renderização condicional é menos frequente.</li>
+                </ul>
+                <li><u>Utilizando Componentes</u></li>
+                <ul>
+                    <li>Os componentes do Vue constituem um dos principais recursos do framework e permitem criar elementos HTML personalizados, independentes e frequentemente reutilizáveis, para construção de interfaces de usuário.</li>
+                    <li>Um componente Vue é essencialmente uma instância com opções pré-definidas, onde registramos o componente a partir da criação de um objeto composto por um bloco de códigos com uma estrutura HTML. Essa instância segue a mesma configuração utilizada exemplos anteriores com o objeto app.</li>
+                    <li>Quando criamos um componente, podemos definir propriedades e eventos próprios, que podem ser compartilhados com outros componentes, possibilitando a construção de aplicações complexas e modulares, compostas de pequenos componentes independentes.</li>
+                    <li>A seguir, vamos implementar um componente que lista o nome de carros armazenados em um array:</li>
+                    <img src="imagem/armazenados_em_um_array.png">
+                    <li>Neste exemplo, criamos uma instância do Vue na linha 14 <b>(Vue.createApp)</b>, que é montada no elemento HTML &lt; /p &gt; &lt;div id="app"&gt; (linhas 6 a 12). O componente "carros-list" é definido nas linhas 21 a 24, com propriedade carro <b>(props: ["carro"])</b>. O componente recebe array como propriedade <b>(props)</b> e o utiliza em o template renderizar a lista de carros com a diretiva <b>v-for</b> (linhas 8 a 11).</li>
+                    <li>A reutilização de componentes é um recurso precioso do Vue.js, pois permite a criação de componentes genéricos, que podem ser utilizados diversas vezes em nossas aplicações.</li>
+                    <li>Nosso último exemplo desta Unidade explora essa característica do Vue:</li>
+                    <img src="imagem/unidade_explora_essa_característica_do_vue.png">
+                    <li>A ideia desse exemplo foi criar um componente do tipo <b>button</b> cujo evento <b>click</b> adiciona uma unidade a um contador <b>(count)</b>. Perceba que implementamos o componente <b>button-counter</b> uma única vez, mas, reutilizamos o template criado três vezes, sem a necessidade de replicar o código utilizado.</li>
+                    <li>Os componentes são a base da estrutura de uma aplicação no Vue.js e podem ser reutilizados em diferentes contextos, como objetos JavaScript que possuem propriedades como data, <b>methods e computed</b>. As instâncias de um componente possuem seu escopo isolado, o que significa que não interferem com outros componentes, e ciclo de vida próprio, que inclui etapas como <b>created, mounted, updated e destroyed</b>.</li>
+                </ul>
+            </ul>
+        </ul>
+    </p>
+    <h2>Unidade 6</h2>
+    <h3>Introdução ao React</h3>
+    <p>
+        <ul>
+            <li><b>Afinal, o que é React?</b></li>
+            <ul>
+                <li>É inegável o quanto o JavaScript se tornou uma linguagem fundamental para o desenvolvimento de páginas dinâmicas e interativas quando falamos sobre interface de usuário. Apesar de sua versatilidade, com o tempo foram surgindo diversas bibliotecas e frameworks que tornaram mais eficiente e rápida a construção de páginas web, com recursos que vão desde o gerenciamento de estado e interação com APIs externas até a criação e reutilização de componentes.</li>
+                <li>Dentre as bibliotecas, o React destacou-se por sua simplicidade e eficiência no desenvolvimento de complexas interfaces de usuário, permitindo desde a criação de componentes reutilizáveis em JavaScript até o gerenciamento de estado, que permite a atualização da interface de forma eficiente e sem necessidade de atualizar a página inteira.</li>
+                <li>O React está entre as bibliotecas mais populares no ecossistema JavaScript, aparecendo como segunda na preferência dos mais de 70.000 desenvolvedores que responderam a uma pesquisa realizada pelo StackOverFlow, em maio de 2022.</li>
+                <li>Criada em 2011 por um engenheiro do Facebook para ser utilizado no feed de notícias, a biblioteca React foi apresentada ao público como código aberto dois anos depois, em 2013, na JSConf US. Mantido pelo Facebook, a grande comunidade de desenvolvedores trabalhando com o React não para de crescer e produzir recursos e ferramentas para facilitarem o desenvolvimento de aplicativos web de alta performance e escaláveis.</li>
+                <li>Em 2015, também na JSConf US, foi lançada a biblioteca React Native, destinada à criação de aplicações para dispositivos móveis que se utilizam de funções nativas das plataformas Android e iOS.</li>
+                <li>Para a construção de interfaces de usuário, o React apropria-se de uma abordagem baseada em componentes e de uma representação virtual da árvore de elementos DOM (Document Object Model) da página, que chamaremos de Virtual DOM.</li>
+                <li>A principal vantagem dessa abordagem é que cada componente é uma unidade independente que pode ser reutilizada e combinada com outros componentes para criar uma interface completa. Já a utilização de uma Virtual DOM permite atualizar somente as partes da interface que foram modificadas, sem precisar recarregar a página inteira.</li>
+                <li>E, por falar nisso, a seguir, vamos sintetizar as principais vantagens da utilização do React em nossos projetos:</li>
+                <ul>
+                    <li><b>Reutilização de componentes:</b> torna o desenvolvimento mais eficiente;</li>
+                    <li><b>Performance:</b> o Virtual DOM permite atualizações mais eficientes e rápidas da interface, sem recarregar a página inteira;</li>
+                    <li><b>Facilidade de manutenção:</b> a estrutura baseada em componentes torna o código mais organizado e fácil de manter;</li>
+                    <li><b>Comunidade ativa:</b> facilita ao desenvolvedor encontrar soluções para problemas e aprender novas técnicas.</li>
+                </ul>
+                <li>Dentre as desvantagens, não podemos deixar de destacar a alta curva de aprendizagem para iniciantes, que podem sentir dificuldade na utilização dos componentes e do Virtual DOM.</li>
+            </ul>
+            <li><b>Primeiros passos com React</b></li>
+            <ul>
+                <li>Para utilização do React em um projeto, precisamos inicialmente incluir a biblioteca em seu código. Isso pode ser feito de duas formas:</li>
+                <ul>
+                    <li><b>Gerenciador de pacotes:</b> podemos utilizar o npm ou yarn para instalar e gerenciar as dependências do projeto. Certifique-se que você possui o <b>npm</b> instalado e digite o seguinte comando no terminal:</li>
+                </ul>
+                <img src="imagem/npm_install_react_react_dom.png">
+                <li>Esse comando fará a instalação das bibliotecas React, que é responsável pela criação e gerenciamento de componentes, e ReactDOM, que se encarrega da renderização dos componentes na página.</li>
+                <ul>
+                    <li><b>Incluir as bibliotecas diretamente na página HTML:</b> ao iniciar um projeto React, importar a biblioteca a partir de uma rede de distribuição de conteúdo (CDN) pode ser uma ótima opção. Em apenas um minuto podemos configurar tudo, como mostraremos a seguir:</li>
+                </ul>
+                <img src="imagem/incluir_as_bibliotecas_diretamente_na_pagina_html.png">
+                <li>Nosso primeiro exemplo será uma página simples que utilizaremos para trabalhar alguns dos conceitos tratados:</li>
+                <img src="imagem/codigo_exemplo_react.js.png">
+                <li>O código pareceu um pouco confuso para você? Não se preocupe, pois, no Quadro 1, vamos comentar cada parte dele:</li>
+                <img src="imagem/exemplo_comentado_quadro.png">
+                <li><u>Componentes</u></li>
+                <ul>
+                    <li>Não seria exagero afirmar que os componentes são o coração e essência do React, pois permitem o desenvolvimento mais eficiente na medida em que a interface de usuário é dividida em partes que são independentes e reutilizáveis.</li>
+                    <li>Na prática, os componentes fazem o encapsulamento da lógica e interface do usuário em elementos HTML, que trabalham isoladamente, provendo códigos independentes e reutilizáveis. Em outras palavras, um componente é uma unidade de códigos que pode ser combinada com outras, com a finalidade de criar interfaces mais complexas.</li>
+                    <li>O modo mais simples para se definir um componente em React é escrevê-lo como uma função JavaScript:</li>
+                    <img src="imagem/modo_mais_simples_para_se_definir_um_componente_em_react.png">
+                    <li>Nesse exemplo, o componente <b>OlaMundo</b> é definido por uma função que utiliza o método <b>createElement</b> para retornar um elemento <b>p</b>. A função recebe uma propriedade <b>(props)</b>, chamada <b>name</b>, e o componente usa o método <b>useState</b> para definir um estado para <b>name</b>, que é atualizado quando passamos o nome da pessoa para o componente quando ele for renderizado.</li>
+                    <li>Perceba que nosso exemplo requer a importação das funções <b>useState</b> e <b>createElement</b> da biblioteca React, o que é feito na linha: <b>const { useState, createElement } = React</b>.</li>
+                    <li>Enquanto a função <b>useState</b> é responsável por criar um estado interno em um componente React, fornecendo uma forma de atualizar esse estado, a função <b>createElement</b> é usada para criar elementos React que compõem as interfaces em um aplicativo.</li>
+                    <li>Finalmente, o método <b>render</b> é chamado para renderização do componente, passando-se o resultado da chamada <b>createElement(OlaMundo, {name: "Marco"})</b> como argumento.</li>
+                    <li>Nosso exemplo utiliza-se de um componente funcional que é mais simples e retorna um elemento por meio de funções JavaScript. No entanto, o React também permite a definição de componentes de classe, que são mais complexos que os funcionais e se utilizam de uma classe ES6. Os componentes de classe serão apresentados no final desta Unidade.</li>
+                    <li>A implementação do React utilizada neste exemplo admite três parâmetros para criar a marcação HTML:</li>
+                    <img src="imagem/implementação_do_react.png">
+                    <li>O primeiro atributo <b>(el)</b> destina-se à criação do elemento HTML; o segundo define um ou mais atributos para o elemento; e o terceiro é o conteúdo do elemento. O resultado é armazenado em uma constante ES6 que, neste exemplo, foi chamada de <b>elementoHTML</b>.</li>
+                    <li>O segundo parâmetro pode ser declarado vazio <b>{}, null</b> ou conter regras CSS. Já o terceiro poderá ser vazio, conter um texto, ou outro elemento HTML, resultando em aninhamentos em tantos níveis quanto desejarmos. Veja o exemplo a seguir:</li>
+                    <img src="imagem/const_element.png">
+                </ul>
+                <li><u>Ciclos de Vida em React</u></li>
             </ul>
         </ul>
     </p>
